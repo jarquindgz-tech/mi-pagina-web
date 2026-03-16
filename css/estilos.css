@@ -197,6 +197,7 @@ footer {
 }
 */
 
+
 .fondo-index{
    background: linear-gradient(
       rgba(255,255,255,0.1),
@@ -208,7 +209,6 @@ footer {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
 
 
 .galeria{
