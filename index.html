@@ -19,47 +19,49 @@
       background-repeat: no-repeat;
       background-attachment: fixed;
     }
-    /* Estilos para el contenido principal para mejorar la legibilidad */
+    /* Estilos para el contenido principal para que esté en un cuadro blanco */
     main {
-      background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente para la sección main */
+      background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
       padding: 30px; /* Más espacio interno */
       margin: 40px auto; /* Centrado y con más margen exterior */
       max-width: 900px; /* Ancho máximo para el contenido */
       border-radius: 10px; /* Bordes redondeados */
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Sombra para que destaque */
-      color: white; /* Color de texto blanco para todo el contenido de main */
+      color: #333; /* Color de texto oscuro para el contenido de main */
     }
     main h2 {
       font-size: 3em; /* Título más grande */
       font-weight: 900; /* Texto más grueso */
       text-align: center; /* Centramos el título */
       margin-bottom: 25px;
-      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9); /* Sombra para el texto del título */
+      color: #1a1a1a; /* Color oscuro para el título */
+      text-shadow: none; /* Quitamos la sombra del texto porque el fondo es claro */
     }
     main p {
       font-size: 1.2em; /* Párrafos más grandes */
       line-height: 1.8; /* Mayor espacio entre líneas para mejor lectura */
       text-align: justify; /* Justificado */
-      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Sombra para el texto del párrafo */
+      color: #333; /* Color oscuro para los párrafos */
+      text-shadow: none; /* Quitamos la sombra del texto */
     }
-    /* También ajustamos header y footer para que mantengan la cohesión visual */
+    /* Ajustamos header y footer para que mantengan la cohesión visual */
     header {
-        background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente para la cabecera */
+        background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente oscuro para la cabecera */
         padding: 15px 0;
     }
     header h1 {
-        color: white;
+        color: white; /* El título de la cabecera sigue siendo blanco */
         text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
     }
     nav a, .dropdown .dropbtn {
-        color: white; /* Aseguramos que los enlaces de navegación sean blancos */
+        color: white; /* Los enlaces de navegación siguen siendo blancos */
         text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
     }
     .dropdown-content a {
         color: black; /* Si el fondo del menú desplegable es claro, mantenemos el texto oscuro */
     }
     footer {
-        background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente para el pie de página */
+        background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente oscuro para el pie de página */
         color: white;
     }
   </style>
