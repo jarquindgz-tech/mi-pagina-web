@@ -10,7 +10,7 @@
     /* Oscurecemos el fondo de la imagen principal para que el texto resalte */
     body {
       background: linear-gradient(
-        rgba(0,0,0,0.3), /* Capa oscura */
+        rgba(0,0,0,0.3), /* Opacidad reducida para que la imagen se vea más */
         rgba(0,0,0,0.3)
       ),
       url('Fondo.png'); /* Asegúrate de que esta ruta sea correcta */
@@ -27,7 +27,7 @@
       max-width: 900px; /* Ancho máximo para el contenido */
       border-radius: 10px; /* Bordes redondeados */
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Sombra para que destaque */
-      color: #333; /* Color de texto oscuro para el contenido de main */
+      color: #333; /* Color de texto oscuro para todo el contenido de main */
     }
     main h2 {
       font-size: 3em; /* Título más grande */
@@ -44,25 +44,50 @@
       color: #333; /* Color oscuro para los párrafos */
       text-shadow: none; /* Quitamos la sombra del texto */
     }
-    /* Ajustamos header y footer para que mantengan la cohesión visual */
+    /* Ajustes para el header: azul y textos centrados */
     header {
-        background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente oscuro para la cabecera */
+        background-color: #003366; /* Fondo azul oscuro */
         padding: 15px 0;
+        color: white; /* Aseguramos que el texto general del header sea blanco */
+        text-align: center; /* Centramos el texto dentro del header, incluyendo el h1 */
     }
     header h1 {
-        color: white; /* El título de la cabecera sigue siendo blanco */
+        color: white;
         text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+        margin: 0; /* Quitamos márgenes por defecto del h1 */
+        padding: 10px 0; /* Añadimos un poco de padding para que no esté pegado */
+    }
+    header .header-con-logo p { /* Esto es para la etiqueta <p> que envuelve el h1 */
+        margin: 0; /* Quitar margen por defecto de la p */
+    }
+    nav {
+        display: flex; /* Usamos flexbox para centrar los elementos */
+        justify-content: center; /* Centra los elementos horizontalmente */
+        align-items: center; /* Centra los elementos verticalmente */
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+        padding-top: 10px; /* Espacio entre el h1 y la navegación */
     }
     nav a, .dropdown .dropbtn {
-        color: white; /* Los enlaces de navegación siguen siendo blancos */
+        color: white; /* Los enlaces de navegación son blancos */
         text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+        padding: 10px 15px; /* Espacio alrededor de cada enlace */
+        text-decoration: none; /* Quitar subrayado */
+        display: block; /* Para que el padding se aplique correctamente */
+    }
+    nav a:hover, .dropdown .dropbtn:hover {
+        background-color: rgba(255, 255, 255, 0.2); /* Efecto hover sutil */
+        border-radius: 5px;
     }
     .dropdown-content a {
         color: black; /* Si el fondo del menú desplegable es claro, mantenemos el texto oscuro */
+        text-shadow: none; /* Quitamos la sombra del texto del dropdown */
     }
+    /* Footer con fondo semi-transparente oscuro */
     footer {
         background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente oscuro para el pie de página */
         color: white;
+        text-align: center;
+        padding: 15px 0;
     }
   </style>
 </head>
