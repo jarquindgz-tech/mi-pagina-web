@@ -171,7 +171,7 @@ footer {
       rgba(255,255,255,0.1),
       rgba(255,255,255,0.1)
     ),
-    url("imagenes/Fondo.png"); /* Asegúrate de que esta ruta sea EXACTA */
+    url("Fondo.png"); /* Asegúrate de que esta ruta sea EXACTA */
   background-size: cover;
   background-position: center; /* Mejor centrado para imágenes de fondo */
   background-repeat: no-repeat;
